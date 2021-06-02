@@ -1,0 +1,249 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+body {
+  color: #f1faee;
+  background-color: #1d3557;
+  background-image: url(https://greepx.com/wp-content/uploads/2020/04/1586042986_19_httpswallpapercave.commr-robot-wallpapers.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: "Staatliches", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e63946;
+}
+nav ul {
+  display: flex;
+  margin-right: 2em;
+  padding: 0;
+}
+nav li {
+  list-style-type: none;
+  margin-right: 6em;
+}
+nav a {
+  text-decoration: none;
+  font-family: "Staatliches", cursive;
+  color: #f1faee;
+  font-size: 1.8em;
+}
+nav a:hover {
+  color: #1d3557;
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 10em 5em;
+}
+#welcome-section h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 7em;
+}
+#welcome-section p {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Shadows Into Light", cursive;
+  color: #e63946;
+  margin-top: -1.5em;
+}
+
+#hello p {
+  font-family: "Indie Flower", cursive;
+  color: #f1faee;
+  position: relative;
+  top: 4.5em;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+  margin-top: 30em;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border: 0.2rem solid #f1faee;
+  border-radius: 10px;
+  font-family: "Staatliches", cursive;
+  font-size: 2em;
+  padding: 1em 0em 1em 0em;
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.projects-grid a {
+  text-decoration: none;
+  color: #f1faee;
+}
+.projects-grid a:hover {
+  box-shadow: 0px 0px 15px 1px #e63946;
+  transform: scale(1.1);
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 2rem 0.5rem;
+  font-family: "Staatliches", cursive;
+  font-weight: 100;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: #1d3557;
+  transition: background 0.3s ease-out;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f1faee;
+  font-family: "Staatliches", cursive;
+}
+.btn-show-all:hover {
+  box-shadow: 0px 0px 15px 1px #e63946;
+  transform: scale(1.1);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+.contact-section-header > p {
+  font-style: italic;
+  font-size: 2em;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.contact-links a {
+  text-decoration: none;
+  color: #f1faee;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+footer a {
+  text-decoration: none;
+  color: #f1faee;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
